@@ -8,7 +8,7 @@ const MONGO_URL = process.env.MONGO_URL
 const connectMongoDB = async () => {
     try {
         await mongoose.connect(MONGO_URL);
-        console.log("Conexão com o MongoDB estabelecida");
+        console.log("Conexão com o MongoDB estabelecida", MONGO_URL);
     } catch (error) {
         console.error("Erro ao conectar com o MongoDB", error);
         process.exit(1);

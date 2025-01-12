@@ -6,6 +6,9 @@ const cors = require('cors')
 const connectMongoDB = require('./app/config/database')
 const usersRouter = require('./app/routes/users');
 const notesRouter = require('./app/routes/notes')
+
+
+
 connectMongoDB()
 
 var app = express();
@@ -41,7 +44,7 @@ app.use(function(err, req, res) {
   res.render('error');
 });
 
-const PORT = process.env.PORT || 5000
+const PORT = 5000
 
 app.listen(PORT, () => {
   console.log(`Servidor rodando na porta ${PORT}`)
