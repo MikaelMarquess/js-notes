@@ -1,0 +1,28 @@
+@import "./custom-colors.scss";
+
+.navbar.navbar-user{
+    background-color: $custom-purple;
+        .userName{
+            color: white;
+        } 
+}
+
+.navbar-item.has-dropdown{
+    background-color: $custom-purple;
+}
+
+.navbar-end.is-active{
+    margin: 0px;
+}
+
+.navbar-dropdown.logged{
+    padding: 0px;
+}
+
+.navbar-item.has-dropdown:hover{
+    background-color: aqua;
+    .userName{
+        color: $custom-purple;
+    }
+}
+

@@ -1,0 +1,58 @@
+@import "./custom-colors.scss";
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.navbar {
+    background-color: $custom-purple !important;
+    width: 100%;
+}
+
+.navbar-menu{
+    margin-right: 5%;
+    
+}
+
+.navbar-menu.is-active{
+    background-color: $custom-purple;
+    .navbar-end{
+        background-color: $custom-purple;
+    }
+}
+
+.navbar-dropdown.logged{
+     padding-top: 0px;
+}
+
+.notes-navbar{
+    height: 30px;
+    margin-top: 10px;
+}
+
+.navbar-end{
+    height: 30px;
+    margin-top: 10px;
+}
+
+.navbar-item.in-notes{
+    background-color: white !important;
+    border-radius: 4px;
+}
+
+.userName{
+    color: black;
+}
+
+.userName:hover{
+    color: white;
+}
+
+.navbar-item:hover{
+    background-color: inherit;
+}

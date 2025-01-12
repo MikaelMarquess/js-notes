@@ -1,0 +1,86 @@
+@import "./custom-colors.scss";
+
+section.register{
+    background-color: $custom-purple;
+    min-height: 100vh;
+}
+
+.columns.is-centered{
+    padding-top: 50px;
+}
+
+.subtitle{
+    text-align: center;
+}
+
+img.logo-register{
+    margin: auto;
+}
+
+.registering.column.is-12{
+    text-align: center;
+    margin-top: -30px;
+    margin-left: 0px;
+}
+
+.edit.column.is-12{
+    text-align: center;
+    margin-top: -30px;
+    margin-left: 0px;
+}
+
+
+input{
+    width: 250px;
+}
+
+section button{
+    margin-top: 20px;
+    margin-right: 20px;
+    width: 70px;
+}
+
+.register.button{
+    background-color: white;
+    color: $custom-purple;
+    border: none;
+}
+
+.register.button:hover{
+    background-color: $custom-purple;
+    color: white;
+}
+
+.login.button{
+    background-color: white;
+    color: $custom-purple;
+    border-color: $custom-purple;
+    margin-right: 0px;
+}
+
+.login.button:hover{
+    color: white;
+    background-color: $custom-purple;
+    border-color: white;
+}
+
+.viewPassword{
+    margin: 0px;
+}
+
+.edit.button{
+    background-color: white;
+    color: $custom-purple;
+    border-color: $custom-purple;
+    margin-right: 0px;
+}
+
+.edit.button:hover{
+    color: white;
+    background-color: $custom-purple;
+    border-color: white;
+}
+
+.delete-button-container{
+    margin-left: 80%;
+}

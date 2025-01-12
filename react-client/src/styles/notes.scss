@@ -1,0 +1,56 @@
+html, body, #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.bm-menu {
+    background-color: white;
+}
+
+
+
+.columns.notes {
+    height: 100%;
+    margin-left: 0;
+    margin-top: 0;
+    display: flex; 
+}
+
+.column.is-12.notes-editor {
+    background-color: white;
+    margin-left: 0;
+    margin-right: 0;
+    color: black;
+    padding: 0;
+    height: 100%; 
+    width: 100%;
+    flex-grow: 1; 
+
+    .quill{
+        min-height: 100%;
+    }
+}
+
+.search-input{
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.search-input input{
+    width: 100%;
+    padding-right: 40px; 
+}
+
+.cancel-button {
+    position: center;
+    margin-left: 20px; 
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+  }

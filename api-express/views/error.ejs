@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Erro <%= error.status %></title>
+</head>
+<body>
+  <div class="container">
+    <h1>Erro <%= error.status %></h1>
+    <p><%= message %></p>
+    <% if (error.status === 404) { %>
+      <p>A página que você está procurando não foi encontrada.</p>
+    <% } else { %>
+      <p>Ocorreu um erro interno no servidor.</p>
+    <% } %>
+  </div>
+</body>
+</html>
