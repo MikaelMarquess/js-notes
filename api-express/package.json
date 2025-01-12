@@ -3,7 +3,6 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "install": "npm ci --omit=dev",
     "start": "node app.js",
     "build": "tsc",
     "dev": "nodemon app.js"
