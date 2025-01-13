@@ -22,10 +22,11 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(cors({
-  origin: 'http://localhost:3000', // URL do front-end
+  origin: '*', // Permitindo qualquer origem da chamada
   methods: ['GET', 'POST', 'PUT', 'DELETE'], // Métodos permitidos
   credentials: true // Se for necessário enviar cookies
 }));
+
 
 app.use('/users', usersRouter); //Rota do usuário
 app.use('/notes', notesRouter) //Rota das notas
