@@ -33,7 +33,7 @@ router.post('/login', async(req, res) => {
       res.status(404).json({error: 'Email incorreto.'})
       //caso esse usuário não exista, irá retornar um erro"
     }else{
-        const isCorrectPassword = promisify(userLogin.isCorrectPassword).bind(userLogin)
+        const isCorrectPassword = await promisify(userLogin.isCorrectPassword).bind(userLogin)
           //variável recebe o método de verificação de senha referente ao usuário
           //promisify: converte uma função callback para permitir o uso de promises
           //bind: refere-se ao contexto atual
