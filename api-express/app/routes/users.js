@@ -50,6 +50,7 @@ router.post('/login', async(req, res) => {
     }
   } catch (error) {
     res.status(500).json({error: 'erro ao logar usuário, por favor, tente novamente.'})
+    console.log(error)
     //caso ocorra algum erro interno no servidor
   }
 })
