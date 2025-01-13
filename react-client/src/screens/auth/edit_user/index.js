@@ -15,7 +15,7 @@ const EditUser = () => {
                             <section className="card has-background-white">
                                 <section className="card-content">
                                     <section className="card-image">
-                                        <img className="logo-register" src={logo}/>
+                                        <img className="logo-register" src={logo} alt="Imagem de apresentação do projeto"/>
                                     </section>
 
                                     <section className="card-content" >
