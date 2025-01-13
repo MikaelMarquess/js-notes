@@ -3,7 +3,7 @@ import userServices from "../../services/users";
 import logoImage from "../../assets/images/logo-white.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faList } from "@fortawesome/free-solid-svg-icons";
-import { Navigate, Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "../../styles/header-logged.scss"
 
 function HeaderLogged(props) {
@@ -68,9 +68,9 @@ function HeaderLogged(props) {
           {/* Navbar End */}
           <div className="navbar-end">
             <div className="navbar-item in-notes has-dropdown is-hoverable">
-              <a className="navbar-link" onClick={toggleDropdown}>
+              <button className="navbar-link" onClick={toggleDropdown}>
                 <span className="userName">{userName}</span>
-              </a>
+              </button>
 
               <div className={`navbar-dropdown logged ${isDropdownActive ? "is-active" : ""}`}>
                 <Link to="/users/edit" className="navbar-item">

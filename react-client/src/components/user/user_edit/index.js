@@ -1,5 +1,5 @@
 import React, {Fragment, useState} from "react";
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import userServices from "../../../services/users";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
@@ -59,11 +59,11 @@ const EditForm = () => {
             alert("Nome atualizado!")
         }
         } catch (err) {
-            if(err.message == "empty-data"){
+            if(err.message === "empty-data"){
                 setError("Nenhum dado fornecido")
-            }else if(err.message == "incorrect-password"){
+            }else if(err.message === "incorrect-password"){
                 setStatus("Senhas incorretas")
-            }else if(err.message == "small-password"){
+            }else if(err.message === "small-password"){
                 setStatus("Senha com o mínimo 6 caracteres")
             }else{
                 console.log(err.message, err)

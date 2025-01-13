@@ -2,21 +2,21 @@ import React, {Fragment, useState} from "react";
 import { useNavigate } from "react-router-dom";
 import userServices from "../../../services/users";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEye, faEyeSlash, faTrash } from "@fortawesome/free-solid-svg-icons";
+import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 
 const RegisterForm = () => {
     const [name, setName] = useState("")
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
     const [confirmPassword, setConfirmPassword] = useState("")
-    const [viewPassword, setViewPassword] = useState(false)
+    const [viewPassword, setViewPassword] = useState(true)
     const [error, setError] = useState("")
     const navigate = useNavigate()
 
     const handleSubmit = async(e) => {
         e.preventDefault()
         try {
-            if(password != confirmPassword){
+            if(password !== confirmPassword){
                 throw new Error("incorrect-password");
             }
 
@@ -28,9 +28,9 @@ const RegisterForm = () => {
             await userServices.register({name: name, email: email, password: password})
             navigate("/login")
         } catch (error) {
-            if(error.message == "incorrect-password"){
+            if(error.message === "incorrect-password"){
                 setError("Senha incorreta")
-            }else if(error.message == "small-password"){
+            }else if(error.message === "small-password"){
                 setError("Senha com mínimo 6 digitos")
             }else{
             console.error("erro ao registrar")

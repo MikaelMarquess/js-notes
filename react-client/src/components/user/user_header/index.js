@@ -1,7 +1,7 @@
 import React, { Fragment, useState, useEffect } from "react";
 import userServices from "../../../services/users";
 import logoImage from "../../../assets/images/logo.png";
-import { Navigate, Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "../../../styles/user-header.scss"
 
 function UserHeader() {
@@ -38,7 +38,6 @@ function UserHeader() {
           </a>
 
           <a
-            role="button"
             className={`navbar-burger ${isMenuActive ? "is-active" : ""}`}
             aria-label="menu"
             aria-expanded={isMenuActive ? "true" : "false"}
@@ -58,18 +57,18 @@ function UserHeader() {
           {/* Navbar End */}
           <div className={`navbar-end ${isDropdownActive ? "is-active" : ""}`}>
             <div className="navbar-item has-dropdown is-hoverable">
-              <a className="navbar-link" onClick={toggleDropdown}>
+              <button className="navbar-link" onClick={toggleDropdown}>
                 <span className="userName">{userName}</span>
-              </a>
+              </button>
 
               <div className={`navbar-dropdown logged${isDropdownActive ? "is-active" : ""}`}>
                 <Link to="/users/edit" className="navbar-item">
                   Editar
                 </Link>
                 <hr className="navbar-divider" />
-                <a className="navbar-item" onClick={logout}>
+                <div className="navbar-item" onClick={logout}>
                   Logout
-                </a>
+                </div>
               </div>
             </div>
           </div>

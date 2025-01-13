@@ -11,7 +11,7 @@
     background-color: $custom-purple;
 }
 
-.navbar-end.is-active{
+.navbar-end.user-edit.is-active{
     margin: 0px;
 }
 
@@ -19,10 +19,8 @@
     padding: 0px;
 }
 
-.navbar-item.has-dropdown:hover{
-    background-color: aqua;
-    .userName{
+.userName{
         color: $custom-purple;
     }
-}
+
 

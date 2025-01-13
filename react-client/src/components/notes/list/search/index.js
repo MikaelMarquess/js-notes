@@ -7,7 +7,7 @@ const SearchNotes = (props) => {
 const [query, setQuery] = useState("")
 
 const handleKeyDown = (e) => {
-    if(e.key == 'Enter'){
+    if(e.key === 'Enter'){
         props.search(query)
     }
 }

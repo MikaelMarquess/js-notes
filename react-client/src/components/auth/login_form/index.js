@@ -7,7 +7,7 @@ import userServices from "../../../services/users";
 const LoginForm = () => {
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
-    const [viewPassword, setViewPassword] = useState(false)
+    const [viewPassword, setViewPassword] = useState(true)
     const [error, setError] = useState("")
     const navigate = useNavigate()
 
@@ -42,7 +42,7 @@ const LoginForm = () => {
 
                     <label className="has-text-black" htmlFor="password">Senha: </label>
                     <section>
-                    <input type={`${viewPassword ? "text" : "password"}`} id="password" required
+                    <input type={`${viewPassword ? "password" : "text"}`} id="password" required
                     value={password}
                     onChange={e => setPassword(e.target.value)}
                     />
