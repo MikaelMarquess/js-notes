@@ -15,7 +15,7 @@ const RegisterScreen = () => {
                             <section className="card has-background-white">
                                 <section className="card-content">
                                     <section className="card-image">
-                                        <img className="logo-register" src={logo}/>
+                                        <img className="logo-register" src={logo} alt=""/>
                                     </section>
 
                                     <section className="card-content" >
