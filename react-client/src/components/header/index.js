@@ -3,10 +3,10 @@ import logojs from "../../assets/images/logo.png";
 import "../../styles/header.scss";
 
 const Header = () => {
-  // Estado para controlar se o menu está ativo ou não
+
   const [isActive, setIsActive] = useState(false);
 
-  // Função para alternar o estado
+  
   const toggleMenu = () => {
     setIsActive(!isActive);
   };
@@ -19,7 +19,6 @@ const Header = () => {
         </a>
 
         <a
-          role="button"
           className={`navbar-burger ${isActive ? "is-active" : ""}`}
           aria-label="menu"
           aria-expanded={isActive ? "true" : "false"}
@@ -38,7 +37,7 @@ const Header = () => {
         className={`navbar-menu ${isActive ? "is-active" : ""}`}
       >
         <div className={`navbar-end home-header ${isActive ? "is-active" : ""}`}>
-          <div className="navbar-item">
+          <div className="navbar-item sign-login">
             <div className="buttons">
               <a className="button is-primary" href="/register">
                 <strong>Sign up</strong>

@@ -1,14 +1,18 @@
 @import "./custom-colors.scss";
 
-.navbar.navbar-user{
-    background-color: $custom-purple;
+.navbar.navbar-user.logged{
+    background-color: white !important;
         .userName{
             color: white;
         } 
 }
 
-.navbar-item.has-dropdown{
-    background-color: $custom-purple;
+.userName::after{
+    color: white;
+}
+
+.navbar-item.in-edit{
+    background-color: $custom-purple !important;
 }
 
 .navbar-end.user-edit.is-active{
@@ -18,9 +22,5 @@
 .navbar-dropdown.logged{
     padding: 0px;
 }
-
-.userName{
-        color: $custom-purple;
-    }
 
 

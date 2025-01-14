@@ -4,7 +4,7 @@ import logoImage from "../../../assets/images/logo.png";
 import { Link, useNavigate } from "react-router-dom";
 import "../../../styles/user-header.scss"
 
-function UserHeader() {
+function HeaderLogged(props) {
   const [isMenuActive, setIsMenuActive] = useState(false);
   const [isDropdownActive, setIsDropdownActive] = useState(false);
   const [userName, setUserName] = useState("");
@@ -30,14 +30,15 @@ function UserHeader() {
 
   return (
     <Fragment>
-      <nav className="navbar is-white navbar-user" role="navigation" aria-label="main navigation">
+      <nav className="navbar navbar-user logged" role="navigation" aria-label="main navigation">
         {/* Navbar Brand */}
         <div className="navbar-brand">
-          <a className="navbar-item navbar-return" href="/notes">
+          <a className="navbar-item" href="/notes">
             <img src={logoImage} alt="Logo" />
           </a>
 
-          <a
+          <button
+            
             className={`navbar-burger ${isMenuActive ? "is-active" : ""}`}
             aria-label="menu"
             aria-expanded={isMenuActive ? "true" : "false"}
@@ -47,7 +48,7 @@ function UserHeader() {
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
-          </a>
+          </button>
         </div>
 
         {/* Navbar Menu */}
@@ -55,20 +56,21 @@ function UserHeader() {
           {/* Navbar Start */}
 
           {/* Navbar End */}
-          <div className={`navbar-end ${isDropdownActive ? "is-active" : ""}`}>
-            <div className="navbar-item has-dropdown is-hoverable">
-              <button className="navbar-link" onClick={toggleDropdown}>
+          <div className="navbar-end">
+            <div className="navbar-item in-edit has-dropdown is-hoverable">
+              <a className="navbar-link" onClick={toggleDropdown}>
                 <span className="userName">{userName}</span>
-              </button>
+              </a>
 
-              <div className={`navbar-dropdown logged${isDropdownActive ? "is-active" : ""}`}>
+              <div className={`navbar-dropdown logged ${isDropdownActive ? "is-active" : ""}`}>
                 <Link to="/users/edit" className="navbar-item">
                   Editar
                 </Link>
                 <hr className="navbar-divider" />
-                <div className="navbar-item" onClick={logout}>
+                <a
+                  className="navbar-item" onClick={logout}>
                   Logout
-                </div>
+                </a>
               </div>
             </div>
           </div>
@@ -78,4 +80,4 @@ function UserHeader() {
   );
 }
 
-export default UserHeader;
+export default HeaderLogged;
