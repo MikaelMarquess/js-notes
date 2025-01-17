@@ -1,7 +1,6 @@
 import React, { Fragment, useState, useEffect, useRef } from "react";
 
 import ReactQuill from "react-quill";
-import "react-quill/dist/quill.snow.css";
 
 const Editor = (props) => {
   const [currentContent, setCurrentContent] = useState("");
