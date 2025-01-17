@@ -1,6 +1,7 @@
 import React, { Fragment, useState, useEffect, useRef } from "react";
 
 import ReactQuill from "react-quill";
+import "react-quill/dist/quill.snow.css"
 
 const Editor = (props) => {
   const [currentContent, setCurrentContent] = useState("");
@@ -49,7 +50,7 @@ const Editor = (props) => {
         value={currentContent}
         modules={modules}
         onChange={handleChange}
-        style={{ backgroundColor: "white", minHeight: "150px" }} // Adiciona estilo para evitar fundo preto
+        style={{ backgroundColor: "white", minHeight: "150px" }}
       />
     </Fragment>
   );
