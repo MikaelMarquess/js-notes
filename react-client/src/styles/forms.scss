@@ -1,7 +1,7 @@
-@import "./custom-colors.scss";
+@use "./custom-colors.scss" as custom-colors;
 
 section.register{
-    background-color: $custom-purple;
+    background-color: custom-colors.$custom-purple;
     min-height: 100vh;
 }
 
@@ -42,25 +42,25 @@ section button{
 
 .register.button{
     background-color: white;
-    color: $custom-purple;
+    color: custom-colors.$custom-purple;
     border: none;
 }
 
 .register.button:hover{
-    background-color: $custom-purple;
+    background-color: custom-colors.$custom-purple;
     color: white;
 }
 
 .login.button{
     background-color: white;
-    color: $custom-purple;
-    border-color: $custom-purple;
+    color: custom-colors.$custom-purple;
+    border-color: custom-colors.$custom-purple;
     margin-right: 0px;
 }
 
 .login.button:hover{
     color: white;
-    background-color: $custom-purple;
+    background-color: custom-colors.$custom-purple;
     border-color: white;
 }
 
@@ -70,14 +70,14 @@ section button{
 
 .edit.button{
     background-color: white;
-    color: $custom-purple;
-    border-color: $custom-purple;
+    color: custom-colors.$custom-purple;
+    border-color: custom-colors.$custom-purple;
     margin-right: 0px;
 }
 
 .edit.button:hover{
     color: white;
-    background-color: $custom-purple;
+    background-color: custom-colors.$custom-purple;
     border-color: white;
 }
 

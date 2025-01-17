@@ -1,7 +1,7 @@
-@import "./custom-colors.scss";
+@use "./custom-colors.scss" as custom-colors;
 
 .home{
-    background-color: $custom-purple;
+    background-color: custom-colors.$custom-purple;
     min-height: 100vh;
 }
 

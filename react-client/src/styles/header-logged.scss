@@ -1,4 +1,4 @@
-@import "./custom-colors.scss";
+@use "./custom-colors.scss" as custom-colors;
 
 html, body {
     margin: 0;
@@ -10,7 +10,7 @@ html, body {
 
 
 .navbar {
-    background-color: $custom-purple !important;
+    background-color: custom-colors.$custom-purple !important;
     width: 100%;
 }
 
@@ -20,9 +20,9 @@ html, body {
 }
 
 .navbar-menu.is-active{
-    background-color: $custom-purple;
+    background-color: custom-colors.$custom-purple;
     .navbar-end{
-        background-color: $custom-purple;
+        background-color: custom-colors.$custom-purple;
     }
 }
 

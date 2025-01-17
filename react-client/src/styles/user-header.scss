@@ -1,4 +1,4 @@
-@import "./custom-colors.scss";
+@use "./custom-colors.scss" as custom-colors;
 
 .navbar.navbar-user.logged{
     background-color: white !important;
@@ -12,7 +12,7 @@
 }
 
 .navbar-item.in-edit{
-    background-color: $custom-purple !important;
+    background-color: custom-colors.$custom-purple !important;
 }
 
 .navbar-end.user-edit.is-active{
