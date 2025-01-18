@@ -1,6 +1,6 @@
 import React, { Fragment, useState, useEffect } from "react";
 import userServices from "../../../services/users";
-import logoImage from "../../../assets/images/logo.png";
+import logoImage from "../../../assets/logo.png";
 import { Link, useNavigate } from "react-router-dom";
 import "../../../styles/user-header.scss"
 

@@ -1,6 +1,6 @@
 import React, {Fragment} from "react";
 import UserHeader from "../../../components/user/user_header";
-import logo from "../../../assets/images/logo.png"
+import logo from "../../../assets/logo.png"
 import EditForm from "../../../components/user/user_edit";
 
 

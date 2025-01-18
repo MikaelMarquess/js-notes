@@ -1,6 +1,6 @@
 import React, { Fragment, useState, useEffect } from "react";
 import userServices from "../../services/users";
-import logoImage from "../../assets/images/logo-white.png";
+import logoImage from "../../assets/logo-white.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faList } from "@fortawesome/free-solid-svg-icons";
 import { Link, useNavigate } from "react-router-dom";

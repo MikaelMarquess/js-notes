@@ -1,6 +1,6 @@
 import React, {Fragment} from "react";
 import Header from "../../../components/header";
-import logo from "../../../assets/images/logo.png"
+import logo from "../../../assets/logo.png"
 import RegisterForm from "../../../components/auth/register_form/index"
 import "../../../styles/forms.scss"
 

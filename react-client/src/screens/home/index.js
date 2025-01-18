@@ -1,6 +1,6 @@
 import React, {Fragment} from "react"
 import Header from "../../components/header/index"
-import jsHome from "../../assets/images/presentation.png"
+import jsHome from "../../assets/presentation.png"
 import "../../styles/home.scss"
 
 const HomeScreen = () => {
