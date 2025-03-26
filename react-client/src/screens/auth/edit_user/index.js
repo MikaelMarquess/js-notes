@@ -5,6 +5,7 @@ import EditForm from "../../../components/user/user_edit";
 
 
 const EditUser = () => {
+    console.log("logo edit:", logo)
     return(
     <Fragment>
         <UserHeader/>

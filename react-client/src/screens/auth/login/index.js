@@ -5,6 +5,7 @@ import LoginForm from "../../../components/auth/login_form";
 import "../../../styles/forms.scss"
 
 const LoginScreen = () => {
+    console.log("logo login:", logo)
     return(
         <Fragment>
             <Header/>

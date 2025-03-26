@@ -33,8 +33,7 @@ const RegisterForm = () => {
             }else if(error.message === "small-password"){
                 setError("Senha com mínimo 6 digitos")
             }else{
-            console.error("erro ao registrar")
-            setError("Erro interno ao registrar, tente novamente.")
+            setError("Email já cadastrado")
             }
         }
     }

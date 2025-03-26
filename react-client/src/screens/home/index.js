@@ -1,9 +1,10 @@
 import React, {Fragment} from "react"
 import Header from "../../components/header/index"
-import jsHome from "../../assets/presentation.png"
 import "../../styles/home.scss"
+const jsHome = require("../../assets/presentation.png")
 
 const HomeScreen = () => {
+    console.log("logo apresentation:", jsHome)
     return(
         <Fragment>
             <Header/>

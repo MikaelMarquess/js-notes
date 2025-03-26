@@ -5,6 +5,7 @@ import RegisterForm from "../../../components/auth/register_form/index"
 import "../../../styles/forms.scss"
 
 const RegisterScreen = () => {
+    console.log("logo register:", logo)
     return(
         <Fragment>
             <Header/>
